@@ -1,16 +1,15 @@
 <?php
 include 'template/header.php';
-include 'register.php';
+include 'config.php';
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-echo "$username";
-echo "<br>";
-echo "$password";
-echo "<br>";
+// isi username terpanggil
+// jika username terdapat di tabel user dengan rolenya pasien, maka arahkan ke halaman pasien
+// jika username terdapat di tabel user dengan rolenya dokter, maka arahkan ke halaman dokter
 
-mysqli_query($host,"select ");
+$data = mysqli_query($host,"select username from user where role='pasien' AND username='$username' ");
+
 
 include 'template/footer.php';
-?>
