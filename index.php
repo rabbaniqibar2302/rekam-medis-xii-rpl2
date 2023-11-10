@@ -38,26 +38,29 @@
                     </h5>
                 </small>
             </h2>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                    <i class="bi bi-person"></i>
-                </span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                    <i class="bi bi-key"></i>
-                </span>
-                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <a class="btn btn-primary" href="#" role="button">Register</a>
+
+            <form action="proses_login.php" method = "post">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username">
                 </div>
-                <div class="col-4">
-                    <a class="btn btn-success" href="#" role="button">Login</a>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-key"></i>
+                    </span>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="password">
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-2">
+                        <a class="btn btn-primary" href="register.php" role="button">Register</a>
+                    </div>
+                    <div class="col-4">
+                       <input class="btn btn-success" type="submit" value="Login">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
