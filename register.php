@@ -18,9 +18,9 @@
     <div>
         <label>Daftar Akun Sebagai :</label>
         <select name="role">
-            <option value="admin">Admin</option>
-            <option value="pasien">Pasien</option>
-            <option value="dokter">Dokter</option>
+            <option value="admin">admin</option>
+            <option value="pasien">pasien</option>
+            <option value="dokter">dokter</option>
         </select>
     </div>
     <div>

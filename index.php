@@ -39,7 +39,7 @@
                 </small>
             </h2>
 
-            <form action="proses_login.php" method = "post">
+            <form action="proses_login.php" method="post">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">
                         <i class="bi bi-person"></i>
