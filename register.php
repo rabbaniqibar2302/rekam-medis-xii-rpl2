@@ -1,31 +1,30 @@
 <?php include 'template/header.php' ?>
-
-<h1>Daftar Akun Rekam Medis</h1>
-<h3>Daftar Sebagai Admin, Pasien atau Dokter</h3>
-<form action="add_regis.php" method="post">
-    <div>
-        <label>Username</label>
-        <input type="text" name="username">
-    </div>
-    <div>
-        <label>Password</label>
-        <input type="password" name="password">
-    </div>
-    <div>
-        <label>Nama Lengkap</label>
-        <input type="text" name="nama_lengkap">
-    </div>
-    <div>
-        <label>Daftar Akun Sebagai :</label>
-        <select name="role">
-            <option value="admin">admin</option>
-            <option value="pasien">pasien</option>
-            <option value="dokter">dokter</option>
-        </select>
-    </div>
-    <div>
-        <input type="submit" value="Daftar Akun">
-    </div>
-</form>
-
+<div class="container">
+    <h1>Daftar Akun Rekam Medis</h1>
+    <h3>Daftar Sebagai Admin, Pasien atau Dokter</h3>
+    <form action="add_regis.php" method="post">
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" name="nama_lengkap">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Daftar Akun Sebagai</label>
+            <select class="form-select" name="role">
+                <option selected>....</option>
+                <option value="admin">admin</option>
+                <option value="pasien">pasien</option>
+                <option value="dokter">dokter</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 <?php include 'template/footer.php' ?>

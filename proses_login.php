@@ -51,6 +51,7 @@ if($user == "pasien"){
     ";
 }else{
     echo"
+    
     <script>
     alert('USER TIDAK TERDAFTAR, SILAHKAN REGSITER');
     window.location.href = 'index.php';
