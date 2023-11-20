@@ -1,17 +1,10 @@
 <!-- Data dari table detail -->
-<h1>Dokter</h1>
+<h1>Data Detail Dokter</h1>
 <div class="row mb-2">
-    <label class="form-label">Alamat</label>
+    <label class="form-label">Nama</label>
     <input type="text" class="form-control" value="">
 </div>
 <div class="row mb-2">
-    <label class="form-label">Usia</label>
+    <label class="form-label">Spesialis</label>
     <input type="text" class="form-control" value="">
-</div>
-<div class="row mb-2">
-    <label class="form-label">Gender</label>
-    <select name="gender" class="form-select">
-        <option value="pria">Pria</option>
-        <option value="wanita">Wanita</option>
-    </select>
 </div>

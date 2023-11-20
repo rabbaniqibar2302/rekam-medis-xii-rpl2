@@ -21,8 +21,8 @@ else if($data['role'] == 'pasien') {
     <!-- Bagian Atas -->
 
     <!-- Bagian Content -->
-    <div class="row mb-5">
-        <form action="" method="post" class="row">
+    <div class="row mb-5 align-item-start">
+        <form action="" method="post" class="row align-item-start">
 
             <div class="col">
                 <!-- Data dari table user -->
