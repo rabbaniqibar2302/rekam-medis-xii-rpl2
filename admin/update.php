@@ -1,6 +1,14 @@
 <?php include '../template/header.php' ?>
 <?php include '../config.php' ?>
 <?php $data = mysqli_fetch_array(mysqli_query($host, "SELECT * FROM user WHERE id_user='$_GET[id_user]'")); ?>
+<?php
+if($data['role'] == 'dokter') {
+    mysqli_fetch_array(mysqli_query($host, "SELECT * FROM detail_dokter WHERE id_user='$_GET[id_user]'"));
+}
+else if($data['role'] == 'pasien') {
+    mysqli_fetch_array(mysqli_query($host, "SELECT * FROM detail_pasien WHERE id_user='$_GET[id_user]'"));
+}
+?>
 
 <div class="container">
     <!-- Bagian Atas -->
@@ -41,22 +49,7 @@
             </div>
 
             <div class="col">
-                <!-- Data dari table detail -->
-                <div class="row mb-2">
-                    <label class="form-label">Alamat</label>
-                    <input type="text" class="form-control" value="">
-                </div>
-                <div class="row mb-2">
-                    <label class="form-label">Usia</label>
-                    <input type="text" class="form-control" value="">
-                </div>
-                <div class="row mb-2">
-                    <label class="form-label">Gender</label>
-                    <select name="gender" class="form-select">
-                        <option value="pria">Pria</option>
-                        <option value="wanita">Wanita</option>
-                    </select>
-                </div>
+                
             </div>
         </form>
     </div>
