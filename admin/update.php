@@ -49,7 +49,14 @@ else if($data['role'] == 'pasien') {
             </div>
 
             <div class="col">
-                
+                <?php
+                if($data['role'] == 'dokter') {
+                    require 'detail_dokter.php';
+                }
+                else if($data['role'] == 'pasien'){
+                    require 'detail_pasien.php';
+                }
+                ?>
             </div>
         </form>
     </div>

@@ -1,5 +1,5 @@
 <!-- Data dari table detail -->
-<h1>Dokter</h1>
+<h1>Pasien</h1>
 <div class="row mb-2">
     <label class="form-label">Alamat</label>
     <input type="text" class="form-control" value="">
