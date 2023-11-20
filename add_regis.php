@@ -38,11 +38,18 @@ if ($role == "admin") {
     $insert_dokter = mysqli_query($host, "insert into user values(
         null,'$user','$pass','$nama','$role'
     )");
-    $insert_dokter .= mysqli_query($host, "insert into detail_dokter values(
-        null,'1','$nama','spesialis'
+
+    // cek id terakhir di user 
+    if ($insert_dokter) {
+        $last = mysqli_insert_id($host);
+    }
+    // cek id terakhir di user 
+
+    $insert_dokter_2 = mysqli_query($host, "insert into detail_dokter values(
+        null,'$last','$nama','spesialis'
     )");
 
-    if ($insert_dokter) {
+    if ($insert_dokter AND $insert_dokter_2) {
         echo "
         <script>
         alert('Data Dokter Berhasil Di Tambah');
@@ -65,7 +72,7 @@ if ($role == "admin") {
     )");
 
     // cek id terakhir di user 
-    if($insert_pasien){
+    if ($insert_pasien) {
         $last = mysqli_insert_id($host);
     }
     // cek id terakhir di user 
@@ -74,7 +81,7 @@ if ($role == "admin") {
         null,'$last','$nama','alamat','gender','00'
     )");
 
-    if ($insert_pasien AND $insert_pasien_2) {
+    if ($insert_pasien and $insert_pasien_2) {
         echo "
         <script>
         alert('Data Pasien Berhasil Di Tambah');

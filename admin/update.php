@@ -1,7 +1,6 @@
 <?php include '../template/header.php' ?>
 <?php include '../config.php' ?>
-<?php $data = mysqli_fetch_array(mysqli_query($host, "SELECT * FROM user WHERE username='$_GET[username]'")); ?>
-<?php $data_pasien = mysqli_fetch_array(mysqli_query($host, "SELECT * FROM user INNER JOIN detail_pasien ON user.id_user = detail_pasien.id_pasien")); ?>
+<?php $data = mysqli_fetch_array(mysqli_query($host, "SELECT * FROM user WHERE id_user='$_GET[id_user]'")); ?>
 
 <div class="container">
     <!-- Bagian Atas -->

@@ -32,7 +32,7 @@
                 echo "<td>$user[nama]</td>";
                 echo "<td>$user[role]</td>";
                 echo "<td>
-                <a class='btn btn-primary' href='update.php?username=$user[username]' role='button'> Update </a>
+                <a class='btn btn-primary' href='update.php?id_user=$user[id_user]' role='button'> Update </a>
                 <a class='btn btn-danger' href='#' role='button'> Delete </a>
                 </td>";
                 echo "</tr>";
