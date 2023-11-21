@@ -49,7 +49,7 @@ if ($role == "admin") {
         null,'$last','$nama','spesialis'
     )");
 
-    if ($insert_dokter AND $insert_dokter_2) {
+    if ($insert_dokter and $insert_dokter_2) {
         echo "
         <script>
         alert('Data Dokter Berhasil Di Tambah');
